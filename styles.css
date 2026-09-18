@@ -352,7 +352,12 @@ a {
 }
 
 
-.card-placeholder {
+.card-juego img {
+    width: 100%;
+
+    border-bottom: 1px solid var(--borde);
+}
+/* .card-placeholder {
     height: 220px;
 
     display: flex;
@@ -368,7 +373,7 @@ a {
             #111827
         );
 }
-
+ */
 
 .card-contenido {
     padding: 1.5rem;
