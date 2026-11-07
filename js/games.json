@@ -1,0 +1,121 @@
+{
+    "juegos": [
+        {
+            "titulo": "Elden Ring",
+            "genero": "RPG",
+            "descripcion": "Explorá un enorme mundo de fantasía lleno de secretos, enemigos y desafíos.",
+            "imagen": {
+                "src": "./img/imagen-eldenRing.jpg",
+                "alt": "Portada Elden Ring"
+            }
+        },
+        {
+            "titulo": "Cyberpunk 2077",
+            "genero": "RPG",
+            "descripcion": "Sumergite en Night City y descubrí un futuro dominado por tecnología, poder y decisiones.",
+            "imagen": {
+                "src": "./img/imagen-cyberpunk.jpg",
+                "alt": "Portada Cyberpunk 2077"
+            }
+        },
+        {
+            "titulo": "Red Dead Redemption 2",
+            "genero": "Aventura",
+            "descripcion": "Viví una historia épica ambientada durante los últimos días del viejo oeste.",
+            "imagen": {
+                "src": "./img/imagen-rdr2.jpg",
+                "alt": "Portada Red Dead Redemption 2"
+            }
+        },
+        {
+            "titulo": "Forza Horizon 5",
+            "genero": "Carreras",
+            "descripcion": "Disfrutá de un mundo abierto lleno de carreras, desafíos y paisajes impresionantes.",
+            "imagen": {
+                "src": "./img/imagen-forza5.jpg",
+                "alt": "Portada Forza Horizon 5"
+            }
+        },
+        {
+            "titulo": "Horizon Zero Dawn",
+            "genero": "Aventura",
+            "descripcion": "Embárcate en un viaje épico a través de un mundo post-apocalíptico lleno de misterios y criaturas mecánicas.",
+            "imagen": {
+                "src": "./img/imagen-horizon.jpg",
+                "alt": "Portada Horizon Zero Dawn"
+            }
+        },
+        {
+            "titulo": "God of War",
+            "genero": "Acción",
+            "descripcion": "Acompaña a Kratos en su viaje por la mitología nórdica, enfrentando dioses y monstruos en una historia de redención y venganza.",
+            "imagen": {
+                "src": "./img/imagen-gow.jpg",
+                "alt": "Portada God of War"
+            }
+        },
+        {
+            "titulo": "The Witcher 3: Wild Hunt",
+            "genero": "RPG",
+            "descripcion": "Sumérgete en un mundo de magia, monstruos y decisiones que tendrán consecuencias duraderas.",
+            "imagen": {
+                "src": "./img/imagen-theWitcher.jpg",
+                "alt": "Portada The Witcher 3: Wild Hunt"
+            }
+        },
+        {
+            "titulo": "Age of Empires IV",
+            "genero": "Estrategia",
+            "descripcion": "Construye tu imperio, lidera ejércitos y domina la historia en este juego de estrategia en tiempo real.",
+            "imagen": {
+                "src": "./img/imagen-aoe4.jpg",
+                "alt": "Portada Age of Empires IV"
+            }
+        },
+        {
+            "titulo": "The Sims 4",
+            "genero": "Simulación",
+            "descripcion": "Crea y controla la vida de tus Sims, construye hogares y explora infinitas posibilidades en este juego de simulación social.",
+            "imagen": {
+                "src": "./img/imagen-sims4.jpg",
+                "alt": "Portada The Sims 4"
+            }
+        },
+        {
+            "titulo": "EA Sports FC26",
+            "genero": "Deportes",
+            "descripcion": "Disfruta del fútbol más realista con gráficos mejorados, modos de juego emocionantes y la posibilidad de crear tu propio equipo.",
+            "imagen": {
+                "src": "./img/imagen-fc26.jpg",
+                "alt": "Portada EA Sports FC26"
+            }
+        },
+        {
+            "titulo": "Resident Evil Village",
+            "genero": "Terror",
+            "descripcion": "Enfrenta tus miedos en un pueblo lleno de horrores y secretos oscuros en esta entrega de la icónica saga de terror.",
+            "imagen": {
+                "src": "./img/imagen-revillage.jpg",
+                "alt": "Portada Resident Evil Village"
+            }
+        },
+        {
+            "titulo": "Grand Theft Auto V",
+            "genero": "Acción",
+            "descripcion": "Sumérgete en la épica historia de Kratos en esta reinserción del legendario juego de acción.",
+            "imagen": {
+                "src": "./img/imagen-gta5.jpg",
+                "alt": "Portada Grand Theft Auto V"
+            }
+        },
+        {
+            "titulo": "Bully: Scholarship Edition",
+            "genero": "Acción",
+            "descripcion": "Explora la vida de un estudiante problemático en esta aventura llena de humor y desafíos en la escuela.",
+            "imagen": {
+                "src": "./img/imagen-bully.jpg",
+                "alt": "Portada Bully: Scholarship Edition"
+            }
+        }
+    ]
+}
