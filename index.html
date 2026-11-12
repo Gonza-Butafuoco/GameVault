@@ -107,6 +107,49 @@
       <!-- JUEGOS                                -->
       <!-- ===================================== -->
 
+      <section
+        class="seccion seccion-carrusel"
+        aria-labelledby="titulo-carrusel"
+      >
+        <div class="cabecera-carrusel">
+          <div class="titulo-seccion">
+            <p class="etiqueta-seccion">DESCUBRÍ GAMEVAULT</p>
+            <h2 id="titulo-carrusel">Tu próxima aventura</h2>
+            <p>Recorré los juegos de nuestra colección.</p>
+          </div>
+
+          <div class="controles-carrusel">
+            <button
+              id="carrusel-anterior"
+              class="boton boton-secundario"
+              type="button"
+              aria-label="Mostrar juegos anteriores"
+              aria-controls="carrusel-juegos"
+            >
+              ←
+            </button>
+
+            <button
+              id="carrusel-siguiente"
+              class="boton boton-secundario"
+              type="button"
+              aria-label="Mostrar juegos siguientes"
+              aria-controls="carrusel-juegos"
+            >
+              →
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="carrusel-juegos"
+          class="carrusel-juegos"
+          role="region"
+          aria-label="Colección de videojuegos"
+          tabindex="0"
+        ></div>
+      </section>
+
       <section id="juegos" class="seccion seccion-juegos">
         <div class="titulo-seccion">
           <p class="etiqueta-seccion">CATÁLOGO</p>
@@ -119,179 +162,29 @@
           </p>
         </div>
 
-        <div class="contenedor-juegos">
-          <!-- JUEGO 1 -->
+        <div
+          id="filtros-genero"
+          class="filtros-genero"
+          role="group"
+          aria-label="Filtrar juegos por género"
+        ></div>
 
-          <article class="card-juego">
-            <img src="./img/imagen-eldenRing.jpg" alt="Portada Elden Ring"/>
-            <div class="card-contenido">
-              <span class="genero"> RPG </span>
+        <div class="controles-favoritos">
+          <button
+            id="mostrar-favoritos"
+            class="filtro-genero"
+            type="button"
+            aria-pressed="false"
+          >
+            Solo favoritos
+          </button>
 
-              <h3>Elden Ring</h3>
-
-              <p>
-                Explorá un enorme mundo de fantasía lleno de secretos, enemigos
-                y desafíos.
-              </p>
-            </div>
-          </article>
-
-          <!-- JUEGO 2 -->
-
-          <article class="card-juego">
-            <img src="./img/imagen-cyberpunk.jpg" alt="Portada Cyberpunk 2077"/>
-
-            <div class="card-contenido">
-              <span class="genero"> RPG </span>
-
-              <h3>Cyberpunk 2077</h3>
-
-              <p>
-                Sumergite en Night City y descubrí un futuro dominado por
-                tecnología, poder y decisiones.
-              </p>
-            </div>
-          </article>
-
-          <!-- JUEGO 3 -->
-
-          <article class="card-juego">
-            <img src="./img/imagen-rdr2.jpg" alt="Portada Red Dead Redemption 2"/>
-
-            <div class="card-contenido">
-              <span class="genero"> Aventura </span>
-
-              <h3>Red Dead Redemption 2</h3>
-
-              <p>
-                Viví una historia épica ambientada durante los últimos días del
-                viejo oeste.
-              </p>
-            </div>
-          </article>
-          <!-- JUEGO 4 -->
-          <article class="card-juego">
-            <img src="./img/imagen-forza5.jpg" alt="Portada Forza Horizon 5"/>
-
-            <div class="card-contenido">
-              <span class="genero"> Carreras </span>
-
-              <h3>Forza Horizon 5</h3>
-
-              <p>
-                Disfrutá de un mundo abierto lleno de carreras, desafíos y
-                paisajes impresionantes.
-              </p>
-            </div>
-          </article>
-          <!-- JUEGO 5 -->
-          <article class="card-juego">
-            <img src="./img/imagen-horizon.jpg" alt="Portada Horizon Zero Dawn"/>
-            <div class="card-contenido">
-              <span class="genero"> Aventura </span>
-              <h3>Horizon Zero Dawn</h3>
-              <p>
-                Embárcate en un viaje épico a través de un mundo post-apocalíptico
-                lleno de misterios y criaturas mecánicas.
-              </p>
-            </div>
-          </article>
-          <!-- JUEGO 6 -->
-          <article class="card-juego">
-            <img src="./img/imagen-gow.jpg" alt="Portada God of War"/>
-            <div class="card-contenido">
-              <span class="genero"> Acción </span>
-              <h3>God of War</h3>
-              <p>
-                Acompaña a Kratos en su viaje por la mitología nórdica, enfrentando
-                dioses y monstruos en una historia de redención y venganza.
-              </p>
-            </div>
-          </article>
-          <!-- JUEGO 7 -->
-          <article class="card-juego">
-            <img src="./img/imagen-theWitcher.jpg" alt="Portada The Witcher 3: Wild Hunt"/>
-            <div class="card-contenido">
-              <span class="genero"> RPG </span>
-              <h3>The Witcher 3: Wild Hunt</h3>
-              <p>
-                Sumérgete en un mundo de magia, monstruos y decisiones que tendrán
-                consecuencias duraderas.
-              </p>
-            </div>
-          </article>
-          <!-- JUEGO 8 -->
-          <article class="card-juego">
-            <img src="./img/imagen-aoe4.jpg" alt="Portada Age of Empires IV"/>
-            <div class="card-contenido">
-              <span class="genero"> Estrategia </span>
-              <h3>Age of Empires IV</h3>
-              <p>
-                Construye tu imperio, lidera ejércitos y domina la historia en
-                este juego de estrategia en tiempo real.
-              </p>
-            </div>
-          </article>
-          <!-- JUEGO 9 -->
-          <article class="card-juego">
-            <img src="./img/imagen-sims4.jpg" alt="Portada The Sims 4"/>
-            <div class="card-contenido">
-              <span class="genero"> Simulación </span>
-              <h3>The Sims 4</h3>
-              <p>
-                Crea y controla la vida de tus Sims, construye hogares y explora
-                infinitas posibilidades en este juego de simulación social.
-              </p>
-            </div>
-          </article>
-          <!-- JUEGO 10 -->
-          <article class="card-juego">
-            <img src="./img/imagen-fc26.jpg" alt="Portada EA Sports FC26"/>
-            <div class="card-contenido">
-              <span class="genero"> Deportes </span>
-              <h3>EA Sports FC26</h3>
-              <p>
-                Disfruta del fútbol más realista con gráficos mejorados, modos
-                de juego emocionantes y la posibilidad de crear tu propio equipo.
-              </p>
-            </div>
-          </article>
-          <article class="card-juego">
-            <img src="./img/imagen-revillage.jpg" alt="Portada Resident Evil Village"/>
-            <div class="card-contenido">
-              <span class="genero"> Terror </span>
-              <h3>Resident Evil Village</h3>
-              <p>
-                Enfrenta tus miedos en un pueblo lleno de horrores y secretos
-                oscuros en esta entrega de la icónica saga de terror.
-              </p>
-            </div>
-          </article>
-          <!-- JUEGO 11 -->
-          <article class="card-juego">
-            <img src="./img/imagen-gta5.jpg" alt="Portada Grand Theft Auto V"/>
-            <div class="card-contenido">
-              <span class="genero"> Acción </span>
-              <h3>Grand Theft Auto V</h3>
-              <p>
-                Sumérgete en la épica historia de Kratos en esta reinserción
-                del legendario juego de acción.
-              </p>
-            </div>
-          </article>
-          <!-- JUEGO 12 -->
-          <article class="card-juego">
-            <img src="./img/imagen-bully.jpg" alt="Portada Bully: Scholarship Edition"/>
-            <div class="card-contenido">
-              <span class="genero"> Acción </span>
-              <h3>Bully: Scholarship Edition</h3>
-              <p>
-                Explora la vida de un estudiante problemático en esta aventura
-                llena de humor y desafíos en la escuela.
-              </p>
-            </div>
-          </article>
+          <span id="cantidad-favoritos"></span>
         </div>
+
+        <p id="cantidad-juegos" class="cantidad-juegos" role="status"></p>
+
+        <div class="contenedor-juegos" id="contenedor-juegos"></div>
       </section>
 
       <!-- ===================================== -->
@@ -398,5 +291,37 @@
 
       <p class="copyright">© 2026 GameVault — Diseño y Desarrollo Web</p>
     </footer>
+
+    <dialog
+      id="modal-detalle"
+      class="modal-detalle"
+      aria-labelledby="modal-titulo"
+      aria-describedby="modal-descripcion"
+    >
+      <div class="modal-cabecera">
+        <span class="etiqueta-seccion">DETALLE DEL JUEGO</span>
+
+        <button
+          id="cerrar-modal"
+          class="boton boton-secundario"
+          type="button"
+          aria-label="Cerrar detalles"
+          autofocus
+        >
+          ✕
+        </button>
+      </div>
+
+      <div class="modal-contenido">
+        <img id="modal-imagen" class="modal-imagen" alt="" />
+
+        <div class="modal-informacion">
+          <span id="modal-genero" class="genero"></span>
+          <h2 id="modal-titulo"></h2>
+          <p id="modal-descripcion"></p>
+        </div>
+      </div>
+    </dialog>
+    <script src="js/main.js"></script>
   </body>
 </html>

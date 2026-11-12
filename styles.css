@@ -339,6 +339,10 @@ a {
 
     border-radius: 16px;
 
+    display: flex;
+
+    flex-direction: column;
+
     transition:
         transform 0.3s ease,
         border-color 0.3s ease;
@@ -377,6 +381,9 @@ a {
 
 .card-contenido {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 
@@ -404,6 +411,7 @@ a {
     color: var(--texto-secundario);
 
     font-size: 0.9rem;
+    margin-bottom: 1.25rem;
 }
 
 
@@ -692,4 +700,273 @@ footer {
         font-size: 2rem;
     }
 
+}
+
+/* CARRUSEL DE JUEGOS */
+
+.seccion-carrusel {
+    background-color: var(--fondo);
+}
+
+.cabecera-carrusel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cabecera-carrusel .titulo-seccion {
+    margin-bottom: 0;
+}
+
+.controles-carrusel {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.controles-carrusel button {
+    font: inherit;
+    color: var(--texto);
+    cursor: pointer;
+}
+
+.carrusel-juegos {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0.5rem 0.25rem 1rem;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+
+.carrusel-juegos::-webkit-scrollbar {
+    display: none;
+}
+
+.tarjeta-carrusel {
+    flex: 0 0 240px;
+    overflow: hidden;
+    border: 1px solid var(--borde);
+    border-radius: 16px;
+    background-color: var(--card);
+    scroll-snap-align: start;
+    transition: border-color 0.25s ease;
+}
+
+.tarjeta-carrusel:hover {
+    border-color: var(--violeta);
+}
+
+.tarjeta-carrusel img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+.tarjeta-carrusel h3 {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.controles-carrusel button:focus-visible,
+.carrusel-juegos:focus-visible {
+    outline: 2px solid var(--azul);
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .cabecera-carrusel {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tarjeta-carrusel {
+        flex-basis: 75%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .carrusel-juegos {
+        scroll-snap-type: none;
+    }
+}
+
+/* FILTROS POR GÉNERO */
+
+.filtros-genero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.filtro-genero {
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    background-color: var(--card);
+    color: var(--texto-secundario);
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease;
+}
+
+.filtro-genero:hover {
+    border-color: var(--violeta-claro);
+    color: var(--texto);
+}
+
+.filtro-genero.activo {
+    background-color: var(--violeta);
+    border-color: var(--violeta);
+    color: var(--texto);
+}
+
+.filtro-genero:focus-visible {
+    outline: 2px solid var(--azul);
+    outline-offset: 3px;
+}
+
+.cantidad-juegos {
+    margin-bottom: 2rem;
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+}
+
+/* BOTÓN DE DETALLES EN LAS CARDS */
+
+.card-acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: auto;
+}
+
+.card-acciones .boton {
+    margin-top: 0;
+    border: 1px solid transparent;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--texto);
+    cursor: pointer;
+}
+
+.card-acciones .boton-favorito {
+    background-color: transparent;
+    border-color: var(--borde);
+}
+
+.card-acciones .boton-favorito:hover,
+.card-acciones .boton-favorito.activo {
+    background-color: var(--fondo-secundario);
+    border-color: var(--violeta-claro);
+    color: var(--violeta-claro);
+}
+
+.controles-favoritos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#cantidad-favoritos {
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+}
+
+/* MODAL DE DETALLES */
+
+.modal-detalle {
+    width: min(850px, 92vw);
+    max-height: 90vh;
+    margin: auto;
+    padding: 1.5rem;
+    overflow-y: auto;
+
+    background-color: var(--card);
+    color: var(--texto);
+    border: 1px solid var(--borde);
+    border-radius: 20px;
+}
+
+.modal-detalle::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.modal-cabecera .etiqueta-seccion {
+    margin-bottom: 0;
+}
+
+.modal-cabecera button {
+    flex-shrink: 0;
+    font: inherit;
+    color: var(--texto);
+    cursor: pointer;
+}
+
+.modal-contenido {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.modal-imagen {
+    width: 38%;
+    border-radius: 12px;
+}
+
+.modal-informacion {
+    flex: 1;
+    min-width: 0;
+}
+
+.modal-informacion h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+.modal-informacion p {
+    color: var(--texto-secundario);
+}
+
+.card-contenido .boton:focus-visible,
+.modal-cabecera button:focus-visible {
+    outline: 2px solid var(--azul);
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    .modal-contenido {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .modal-imagen {
+        width: 100%;
+        max-width: 250px;
+        align-self: center;
+    }
+
+    .modal-informacion h2 {
+        font-size: 1.5rem;
+    }
 }
